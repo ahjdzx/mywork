@@ -1,0 +1,3 @@
+NGINX_ERROR_TIME %{YEAR}/%{MONTHNUM}/%{MONTHDAY} %{TIME}
+NGINX_ERROR_LOG %{NGINX_ERROR_TIME:timestamp} \[%{LOGLEVEL:loglevel}\] %{POSINT:pid}#%{NUMBER}: \*%{NUMBER} %{GREEDYDATA:errormsg}
+NGINX_ERROR_LOG %{NGINX_ERROR_TIME:timestamp} \[%{LOGLEVEL:loglevel}\] %{POSINT:pid}#%{NUMBER}: %{GREEDYDATA:errormsg}
