@@ -1,0 +1,4 @@
+# yyyy-MM-dd HH:mm:ss,SSS eg: 2014-01-09 17:32:25,527
+JBOSS_DATESTAMP 20%{YEAR}-%{MONTHNUM}-%{MONTHDAY} %{HOUR}:?%{MINUTE}(?::?%{SECOND})
+JBOSS_LOG_MESSAGE (.*)
+JBOSS_LOG %{JBOSS_DATESTAMP:timestamp} %{WORD:loglevel}  \[%{JAVACLASS:class}\] %{JBOSS_LOG_MESSAGE:logmessage}

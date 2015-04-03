@@ -1,0 +1,1 @@
+ACTIVEMQLOG %{DATESTAMP:timestamp} \| %{LOGLEVEL:loglevel}  \| %{GREEDYDATA:logcontent} \| (?:%{JAVACLASS:javaclass}|%{URIPATH:urlpath}) \| %{GREEDYDATA:location}
